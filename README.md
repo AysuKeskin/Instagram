@@ -1,67 +1,73 @@
-Project Overview::
+# Instagram Feed Manager Simulation
 
-This project is a simulation of an Instagram Feed Manager system. The application allows users to create accounts, post content, interact with posts (likes and views), manage follow relationships, and generate personalized feeds. The primary focus is on implementing efficient data structures and algorithms to handle operations within the constraints of time and memory limits.
+## 📖 Project Overview  
+This project simulates an **Instagram Feed Manager** system. The application allows users to:  
+- Create accounts.  
+- Post content.  
+- Interact with posts (like and view).  
+- Manage follow relationships.  
+- Generate personalized feeds.  
 
-Application Capabilities
+The primary focus is on implementing efficient **data structures** and **algorithms** to handle operations within time and memory constraints.
 
-User Management:
+---
 
-Create users with unique IDs.
-Follow or unfollow other users.
+## ⚙️ Application Capabilities  
 
-Post Management:
+### 1️⃣ User Management  
+- Create users with **unique IDs**.  
+- Follow or unfollow other users.  
 
-Create posts with unique IDs and associated content.
-View and interact with posts (like/unlike).
+### 2️⃣ Post Management  
+- Create posts with **unique IDs** and associated content.  
+- View and interact with posts (like/unlike).  
 
-Feed Generation:
+### 3️⃣ Feed Generation  
+- Generate personalized feeds based on:  
+  - Post popularity.  
+  - Post visibility.  
+- Feeds exclude posts:  
+  - Already seen by the user.  
+  - Created by the user themselves.  
 
-Generate personalized feeds based on post popularity and visibility.
-Feeds exclude posts already seen by the user or created by the user themselves.
+### 4️⃣ Post Sorting  
+- Sort posts by **number of likes**.  
+- Break ties **lexicographically** by post ID.  
 
-Post Sorting:
+---
 
-Sort a user’s posts by the number of likes.
-Break ties lexicographically by post ID.
+## 📂 Input and Output  
 
-Input and Output Files:
-
-Input File:
-
-The input file contains a series of commands in the following structure:
+### 📥 Input File  
+The input file contains commands in the format:  
 <command> <parameters>
-Example commands:
+Example Commands:
 
-create_user user1
-
-follow_user user1 user2
-
+create_user user1  
+follow_user user1 user2  
 generate_feed user1 5
 
-Output File:
 
-The output file logs all system activities and results, adhering to the specified format. For example:
+### 📤 Output File
+The output file logs all system activities and results, adhering to the specified format.
 
-Created user with Id user1.
+Example Output:
 
-user1 followed user2.
-
-Feed for user1:
-
-Post ID: post1, Author: user2, Likes: 10
-
+Created user with Id user1.  
+user1 followed user2.  
+Feed for user1:  
+Post ID: post1, Author: user2, Likes: 10  
 No more posts available for user1.
 
-Execution Instructions:
+## 🚀 Execution Instructions
 
-Compiling the Code
-
+### 📦 Compiling the Code
 Use the following command to compile the program:
 
 javac *.java
-Running the Program
 
-Run the program using the following command:
+### ▶️ Running the Program
+Run the program using the command:
 
 java Main <input_file> <output_file>
 
